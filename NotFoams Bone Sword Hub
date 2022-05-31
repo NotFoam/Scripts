@@ -7,6 +7,9 @@ local Section = Tab:NewSection("Humanoid Root Part Settings")
 Section:NewSlider("Walkspeed", "Local Walkspeed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
+Section:NewSlider("Jump Power", "Sets jump power", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
 Section:NewButton("Fly (Click E)",("Click E"), function()
     loadstring(game:HttpGet('https://pastebin.com/raw/FVnMJKZv'))()
 end)
